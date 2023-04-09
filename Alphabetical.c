@@ -6,17 +6,16 @@ int swap(char *x, char *y);
 int main(void)
 {
     int m;
+    
     // Get user input
-    int n = get_int("Enter the no. of Alphabets: ");
-     char t[n];
-    printf("Enter the Alphabets: ");
+    int n = get_int("Enter the no. of alphabets: ");
+    char t[n];
+    printf("Enter the alphabets: ");
     for (int i = 0; i < n; i++)
     {
-    scanf("%s\n", t[i])
+    scanf("%s\n", t[i]);
     }
-
-    printf("The Alphabets in sorted list: ");
-
+    
     // Bubble sort algorithm
     while (n > 0)
     {
@@ -40,9 +39,11 @@ int main(void)
     }
 
     // Print the alphabets in sorted order
+    printf("The alphabets in sorted order: ");
+    
     for (int i = 0; i < n; i++)
     {
-        printf("%s\t", t[i]);
+        printf("%s\n", t[i]);
     }
     return 0;
 }
